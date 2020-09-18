@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Customer Details</legend>
+            <div>
+                <label>First Name</label>
+                <input type="text" autofocus>
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other">
+            </div>
+            <div>
+                <label>Preferred contact method:</label>
+                <label for="email">Email</label>
+                <input type="radio" id="email" name="contact" value="email">
+                <label for="phone">Phone</label>
+                <input type="radio" id="phone" name="contact" value="phone">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email">
+            </div>
+            <div>
+                <label>Phone</label>
+                <input type="tel">
+            </div>
+            <div>
+                <label for="towns">Town</label>
+                <select name="towns" id="towns">
+                    <option value="varna">Varna</option>
+                    <option value="plovdiv">Plovdiv</option>
+                    <option value="burgas">Burgas</option>
+                    <option value="sofia">Sofia</option>
+                    <option value="pleven">Pleven</option>
+                </select>
+
+            </div>
+            <div>
+                <label>Age</label>
+                <input type="number" min="18" max="70">
+            </div>
+            <div>
+                <label for="languages">Programming language </label>
+                <input list="languages" name="language" id="language">
+                
+                <datalist id="languages">
+                  <option value="C#">                  
+                </datalist>
+            </div>
+            <div>
+                <textarea rows="5" cols="20" placeholder="More information...">
+                </textarea>
+            </div>
+            <div>
+                <input type="checkbox" checked>
+                <label>I agree the Terms and Conditions</label>                
+            </div>
+            <div>
+                <input type="submit" value="Send">                              
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
