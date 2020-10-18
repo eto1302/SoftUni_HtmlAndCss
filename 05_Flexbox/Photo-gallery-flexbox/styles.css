@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li img{
+    flex-basis: 100%;
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery li {
+    display: flex;
+    list-style: none outside;
+    flex-basis: 26%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    border: 7px solid #000000;
+}
+
+.gallery li img {
+    padding: 5.5rem 0.8rem;
+}
